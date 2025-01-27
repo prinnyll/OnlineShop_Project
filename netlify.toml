@@ -3,10 +3,9 @@
   publish = "data"
 
 [[edge_functions]]
-  path = "index"
-  script = "data/api.js"
+  path = "/index"
+  function = "netlify/edge-functions/index"
 
 [[redirects]]
   from = "/*"
   to = "/index"
-  status = 200

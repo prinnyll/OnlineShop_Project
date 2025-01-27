@@ -4,7 +4,7 @@ const MongoClient = mongodb.MongoClient;
 
 const url =
   "mongodb+srv://johnnyffaa:<9NbLylSgwshLGk1A>@cluster0.sssjw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-const client = new MongoClient(uri, {
+const client = new MongoClient(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

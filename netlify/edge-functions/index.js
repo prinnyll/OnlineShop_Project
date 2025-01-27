@@ -1,11 +1,14 @@
 const express = require("express");
 const app = express();
-const MongoClient = require("./data/database");
+const { connectToDatabase, getDb } = require("./database");
 const ejs = require("ejs");
 const fs = require("fs");
 
+// Connect to the database
+connectToDatabase();
+
 app.get("/api/data", async (req, res) => {
-  const db = await MongoClient.connect();
+  const db = getDb();
   const collection = db.collection("products");
   const data = await collection.find().toArray();
   res.json(data);

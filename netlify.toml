@@ -1,5 +1,5 @@
 [build]
-  command = "node data/api.js"
+  command = "node netlify/edge-functions/index.js"
   publish = "data"
 
 [[edge_functions]]

@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const { connectToDatabase, getDb } = require("../data/database");
+const { connectToDatabase, getDb } = require("../../data/database");
 const ejs = require("ejs");
 const fs = require("fs");
 

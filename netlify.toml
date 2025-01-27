@@ -2,7 +2,11 @@
   command = "node data/api.js"
   publish = "data"
 
+[[edge_functions]]
+  path = "index"
+  script = "data/api.js"
+
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/index"
   status = 200

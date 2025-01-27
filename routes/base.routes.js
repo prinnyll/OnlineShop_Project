@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.render("customer/home/audohome");
+  res.render("customer/home/index");
 });
 
 router.get("/about", (req, res) => {

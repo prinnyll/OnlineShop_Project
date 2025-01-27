@@ -2,6 +2,14 @@ const mongodb = require("mongodb");
 
 const MongoClient = mongodb.MongoClient;
 
+const url =
+  "mongodb+srv://johnnyffaa:<9NbLylSgwshLGk1A>@cluster0.sssjw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const client = new MongoClient(uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+module.exports = client;
+
 let mongodbUrl = "mongodb://127.0.0.1:27017";
 
 if (process.env.MONGODB_URL) {

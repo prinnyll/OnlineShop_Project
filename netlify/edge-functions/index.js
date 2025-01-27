@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const MongoClient = require("./database");
+const MongoClient = require("./data/database");
 const ejs = require("ejs");
 const fs = require("fs");
 

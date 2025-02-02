@@ -1,6 +1,6 @@
 vs code 
 open Terminal
 type
-and
 npm install
+and
 npm start

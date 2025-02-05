@@ -1,4 +1,16 @@
 @media (max-width: 768px) {
+  .sketchfab-embed-wrapper {
+    width: 100%; /* make the wrapper full-width on mobile */
+    height: 300px; /* set a fixed height for the wrapper on mobile */
+    overflow: hidden; /* hide any excess content */
+  }
+
+  .sketchfab-embed-wrapper iframe {
+    width: 100%; /* make the iframe full-width on mobile */
+    height: 100%; /* make the iframe full-height on mobile */
+    border: none; /* remove any borders */
+  }
+
   /* products-mobile.css */
 
   /* Make the product grid more responsive */
@@ -81,4 +93,9 @@
   .product_list .tit span {
     padding: var(--space-1);
   }
+}
+
+.sketchfab-embed-wrapper {
+  margin: 0 auto; /* center horizontally */
+  max-width: 640px; /* set a maximum width to prevent overflowing */
 }

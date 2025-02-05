@@ -1,6 +1,1 @@
-vs code 
-open Terminal
-type
-npm install
-and
-npm start
+admin user AC:test@test.com password:123456789
